@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: hsl(243, 87%, 12%);
+}
+
+.section {
+  margin-top: 40px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 50px;
+}
+
+li a {
+  text-decoration: none;
+  margin-right: 2px;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-links {
+  display: flex;
+  width: 20%;
+  justify-content: right;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 120px;
+  padding-left: 50px;
+  /* margin-left: 50px; */
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 700px;
+  font-family: "Raleway";
+  padding-bottom: 25px;
+}
+
+
+
+p {
+  font-size: 20px;
+  font-family: "Open Sans";
+}
+
+.p{
+  margin-top: 11px;
+}
+
+.first-hero-box {
+  width: 50%;
+  /* padding: 100px 20px; */
+}
+
+.second-hero-box {
+  width: 50%;
+  /* padding: 100px 20px; */
+}
+
+.Inputbox {
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+::placeholder{
+    color: hsl(240, 26%, 87%);
+}
+
+button {
+  margin-left: 10px;
+  width: 34%;
+  margin-top: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-family: "Raleway";
+}
+
+.img2-container{
+    margin-left: 20px;
+
+}
+
+.hero2{
+  background-image: url(./Images/bg-curve-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 100px;   /*changed*/ 
+  padding-bottom: 150px; /*changed*/
+}
+
+.a{
+  font-size: 20px;
+  font-family: "Open Sans";
+  margin-top: 10px;
+ 
+}
+a{
+  color: hsl(170, 45%, 43%);
+}
+
+.quote{
+  height: 255px;
+  width: 450px;
+  background-color: #ffff;
+  box-shadow: 1px 2px 10px #e2e2e2;
+  padding: 40px 20px;
+  margin-top: 55px;
+  border-radius: 5px;
+}
+
+.testimonial{
+display: flex;
+margin-top: 30px;
+
+}
+.testimonial > img{
+  width: 35px;
+  border-radius: 50%;
+}
+
+span{
+  font-size: 10px;
+}
+
+.testimonial > div{
+margin-left: 9px;
+}
+
+h5{
+  font-family: "Raleway";
+}
+
+.hero3{
+  background: hsl(238, 22%, 44%);
+  color: #ffff;
+  /* padding-left: 50px; */
+  /* padding-bottom: 10px; */
+  
+}
+
+.h{
+font-size: 30px;
+}
+
+.p3{
+   font-size: 14px;
+}
+.hero-down{
+    margin-top: 0px;
+    padding: 90px;
+}
+
+.second-input-btn{
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 30px; */
+  margin-left: 250px;
+  
+}
+
+.input-display{
+  width: 95%;
+  border-radius: 2px;
+  border: none;
+}
+.button2{
+  margin-top: 12px;
+  margin-left: 1px;
+  width: 39%;
+}
+
+/* footer section */
+
+
+.sm-handle a{
+  color: rgb(9, 9, 221);
+  font-size: 20px;
+}
+
+footer{
+ background-color: hsl(243, 87%, 12%);
+ color: #ffff;
+}
+
+.ft-a{
+  color: #ffff;
+}
+
+.footer-container{
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 90px 5px;
+  margin-left: 70px;
+  
+}
+.footer-logo img{
+  filter: brightness(0) invert(1);
+  margin-top: 10px;
+}
+
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer-logo span{
+  margin: 4px;
+  font-size: 12px;
+}
+
+.footer-container ul{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-img{
+  margin-right: 12px;
+  
+}
+
+.sm-handle{
+ display: flex;
+ gap: 25px;
+ margin-right: 280px;
+}
+
+/*---media query for mobile*/
+
+
+  @media only screen and (max-width: 700px){
+    header{
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 16px;
+      margin-right: 10px;
+    }
+
+    .nav-box{
+      margin: 0;
+      justify-content: space-between;
+      display: flex;
+    }
+
+    .nav-logo img{
+         width: 100px;
+    }
+    
+    .nav-links ul{
+       justify-content: space-between; 
+       display: flex;
+    }
+
+    .nav-links ul li{
+      margin-left: 10px;
+    }
+}
