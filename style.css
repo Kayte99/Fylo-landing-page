@@ -8,49 +8,71 @@
   box-sizing: border-box;
 }
 
-body{
-  color: hsl(243, 87%, 12%);
+/* Set Images Properly with max-width */
+img {
+  max-width: 100%; /* [1] */
+  height: auto; /* [1] */
+  vertical-align: middle; /* [2] */
+  font-style: italic; /* [3] */
+  background-repeat: no-repeat; /* [4] */
+  background-size: cover; /* [4] */
+  shape-margin: 0.75rem; /* [5] */
 }
 
-.section {
-  margin-top: 40px;
+body{
+  color: hsl(243, 87%, 12%);
+  font-family: "Open Sans";
 }
-nav {
+
+.wrapper-head{
+  max-width: 1200px;
+  /* width: 100%; */
+  margin: 0 auto;
+}
+.wrapper{
+  max-width: 1200px;
+  /* width: 100%; */
+  margin: 5rem auto;
+}
+
+
+.nav-box{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px 50px;
+  margin-top: 2rem;
 }
 
-li a {
+.nav-links ul{
+      
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    
+}
+
+.nav-links ul li a{
   text-decoration: none;
-  margin-right: 2px;
-  color: black;
-}
-
-li {
-  list-style-type: none;
-}
-
-.nav-links {
-  display: flex;
-  width: 20%;
-  justify-content: right;
-}
-
-.nav-links ul {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 120px;
-  padding-left: 50px;
+  /* margin-top: 120px; */
+  /* padding-left: 50px; */
   /* margin-left: 50px; */
+}
+
+.first-hero-box {
+  width: 50%;
+  /* padding: 100px 20px; */
+}
+
+.second-hero-box {
+  width: 50%;
+  /* padding: 100px 20px; */
 }
 
 h2 {
@@ -71,17 +93,9 @@ p {
   margin-top: 11px;
 }
 
-.first-hero-box {
-  width: 50%;
-  /* padding: 100px 20px; */
-}
 
-.second-hero-box {
-  width: 50%;
-  /* padding: 100px 20px; */
-}
 
-.Inputbox {
+.inputbox {
   width: 50%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -92,8 +106,8 @@ p {
 }
 
 button {
-  margin-left: 10px;
-  width: 34%;
+  margin-left: 0.6rem;
+  width: 30%;
   margin-top: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -120,13 +134,13 @@ button {
   padding-bottom: 150px; /*changed*/
 }
 
-.a{
+.fylo-link{
   font-size: 20px;
   font-family: "Open Sans";
   margin-top: 10px;
  
 }
-a{
+.fylo-link a{
   color: hsl(170, 45%, 43%);
 }
 
@@ -191,10 +205,15 @@ font-size: 30px;
 }
 
 .input-display{
-  width: 95%;
+  /* width: 95%;
   border-radius: 2px;
-  border: none;
+  border: none; */
+  width: 86%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
+
 .button2{
   margin-top: 12px;
   margin-left: 1px;
@@ -216,7 +235,10 @@ footer{
 
 .ft-a{
   color: #ffff;
+  text-decoration: none;
+  
 }
+
 
 .footer-container{
   display: flex;
@@ -247,6 +269,7 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  list-style: none;
 }
 
 .footer-img{
@@ -265,29 +288,48 @@ footer{
 
   @media only screen and (max-width: 700px){
     header{
-      margin-top: 5px;
-      display: flex;
-      justify-content: space-between;
-      margin-left: 16px;
-      margin-right: 10px;
+      padding: 0 2rem;
     }
+ .nav-logo img{
+   width: 100px;
+ }
 
-    .nav-box{
-      margin: 0;
-      justify-content: space-between;
-      display: flex;
-    }
+ .hero{
+  flex-direction: column;
+  padding: 0 2rem;
+ }
 
-    .nav-logo img{
-         width: 100px;
-    }
-    
-    .nav-links ul{
-       justify-content: space-between; 
-       display: flex;
-    }
+ .first-hero-box,.second-hero-box{
+   width: 100%;
+ }
 
-    .nav-links ul li{
-      margin-left: 10px;
-    }
+ .order2{
+  order: 2;
+ }
+
+ .first-hero-box h2{
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 2.5rem;
+  line-height: 2.3rem;
+ }
+
+ .first-hero-box p{
+  font-size: 15px;
+  text-align: center;
+ }
+
+ 
+.inputbox {
+  width: 100%;
+  margin-top: 2rem;
+  
+}
+
+button{
+  width: 1%;
+  margin-left: 0;
+ 
+}
+
 }
