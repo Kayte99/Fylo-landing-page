@@ -47,7 +47,7 @@ body{
       
       list-style: none;
       display: flex;
-      gap: 2rem;
+      gap: 1.5rem;
     
 }
 
@@ -120,10 +120,6 @@ button {
   font-family: "Raleway";
 }
 
-.img2-container{
-    margin-left: 20px;
-
-}
 
 .hero2{
   background-image: url(./Images/bg-curve-desktop.svg);
@@ -132,6 +128,12 @@ button {
   background-position: center;
   padding-top: 100px;   /*changed*/ 
   padding-bottom: 150px; /*changed*/
+}
+
+
+.img2-container{
+  margin-left: 20px;
+
 }
 
 .fylo-link{
@@ -220,6 +222,8 @@ font-size: 30px;
   width: 39%;
 }
 
+
+
 /* footer section */
 
 
@@ -286,12 +290,12 @@ footer{
 /*---media query for mobile*/
 
 
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 600px){
     header{
-      padding: 0 2rem;
+      padding: 0 1rem;
     }
  .nav-logo img{
-   width: 100px;
+   width: 90px;
  }
 
  .hero{
@@ -308,10 +312,10 @@ footer{
  }
 
  .first-hero-box h2{
-  font-size: 1.6em;
+  font-size: 1.4em;
   text-align: center;
   margin-top: 2.5rem;
-  line-height: 2.3rem;
+  line-height: 2.0rem;
  }
 
  .first-hero-box p{
@@ -327,9 +331,130 @@ footer{
 }
 
 button{
-  width: 1%;
+  width: 100%;
   margin-left: 0;
  
 }
+
+.order4{
+  order: 4;
+}
+
+.img2-container{
+  width: 101%;
+ 
+}
+
+.hero2{
+  padding-top: 30px;
+  /* padding-bottom: 100px; */
+  shape-margin: 2rem;
+  padding-bottom: 0;
+ 
+ 
+}
+
+/* .hero2-mobile{
+  margin-bottom: 2rem;
+} */
+
+
+.first-hero-box .h2-mobile{
+      font-size: 1em;
+}
+
+.first-hero-box .p2-mobile{
+  text-align: left;
+}
+
+.first-hero-box .p3-mobile{
+   text-align: left;
+}
+
+.fylo-link{
+  margin-top: 2rem;
+}
+
+.fylo-link a{
+  margin-left: 5rem;
+  font-size: 0.8rem;
+}
+
+.quote{
+  height: 230px;
+  width: 300px; 
+  margin-top: 45px;
+  padding-top: 1rem;
+ margin-left: 0.4rem;
+}
+
+.p3-mobile{
+  font-size: 1rem;
+}
+
+.first-hero-box h2{
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  margin-top: 4rem;
+  
+}
+.first-hero-box p{
+  margin-bottom: 1.5rem;
+ /* font-weight: 200; */
+}
+
+.hero3{
+  height: 21rem;
+}
+
+.second-input-btn{
+  margin-right: 150px;
+  margin-left: 30px;
+}
+
+.input-display{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 81%;
+}
+
+.button2{
+  width: 80%;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: 0.7em;
+}
+::placeholder{
+  font-size: 0.8em;
+}
+
+footer{
+  height: 45rem;
+}
+
+.footer-container{
+  display: flex;
+  /* gap: 30px; */
+  margin: auto;
+  align-items: flex-start;
+  width: 85%;
+  flex-direction: column;
+  
+  
+  
+  
+}
+
+.footer-container ul{
+
+  align-items: flex-start;
+  padding-left: 0;
+  
+}
+
+ 
+
+
+
 
 }
